@@ -19,6 +19,7 @@ Group: System/Libraries
 BuildRequires: cmake
 BuildRequires: ninja
 BuildRequires: cmake(KF5Mime)
+BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Widgets)
