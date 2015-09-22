@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kmbox-15.08.0.tar.xz: de20a8cdfa0195e34da707943800121389be870a
+sources:
+  kmbox-15.08.1.tar.xz: 444043b899618d5057ed6dfa8bf87ce57cb12d34
