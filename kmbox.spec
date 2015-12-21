@@ -1,6 +1,7 @@
 %define major 5
 %define libname %mklibname KF5Mbox %{major}
 %define devname %mklibname KF5Mbox -d
+%define _disable_lto 1
 
 Name: kmbox
 Version:	15.12.0
@@ -10,21 +11,19 @@ Version:	15.12.0
 %else
 %define ftpdir stable
 %endif
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for accessing MBOX mail files
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
+BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF5Mime)
 BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Widgets)
 BuildRequires: cmake(Qt5Test)
-BuildRequires: cmake(ECM)
 BuildRequires: boost-devel
 
 %description
