@@ -4,7 +4,7 @@
 %define _disable_lto 1
 
 Name: kmbox
-Version:	19.04.3
+Version:	19.07.80
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -55,8 +55,8 @@ Development files (Headers etc.) for %{name}.
 %ninja_install -C build
 
 %files -n %{libname}
-%{_sysconfdir}/xdg/kmbox.categories
-%{_sysconfdir}/xdg/kmbox.renamecategories
+%{_datadir}/qlogging-categories5/kmbox.categories
+%{_datadir}/qlogging-categories5/kmbox.renamecategories
 %{_libdir}/*.so.%{major}*
 
 %files -n %{devname}
