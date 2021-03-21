@@ -1,7 +1,6 @@
 %define major 5
 %define libname %mklibname KF5Mbox %{major}
 %define devname %mklibname KF5Mbox -d
-%define _disable_lto 1
 
 Name: kmbox
 Version:	21.03.80
