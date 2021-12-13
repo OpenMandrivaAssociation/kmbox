@@ -24,6 +24,9 @@ BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Widgets)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: boost-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for accessing MBOX mail files
