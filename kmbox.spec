@@ -13,7 +13,9 @@ Version:	26.08.0
 %else
 %define ftpdir stable
 %endif
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
+# cmake configs still contain a dead KPim6Mime fallback
+%global __requires_exclude cmake\\(KPim6Mime\\)|cmake\\(kpim6mime\\)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/pim/kmbox/-/archive/%{gitbranch}/kmbox-%{gitbranchd}.tar.bz2#/kmbox-%{git}.tar.bz2
 %else
